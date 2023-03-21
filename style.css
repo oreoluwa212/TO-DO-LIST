@@ -1,0 +1,140 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 18px;
+   width: 100vw;
+   background-color: rgb(190, 11, 56);
+   overflow-x: hidden;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   align-items: center;
+   padding-top: 50px;
+   height: 100vh;
+   font-family: "poppins", sans-serif;
+}
+
+.toDoList {
+   width: 80%;
+}
+
+.toDoList h1 {
+   color:white;
+   font-size: 3em;
+   font-weight: 900;
+   padding: 10px 0;
+   text-align: center;
+   border-radius: 0.5rem 0.5rem 0 0;
+   background-color: #ffffff5a;
+}
+
+.toDoList form {
+   display: flex;
+   width: 100%;
+   background-color: #1c3cad;
+}
+
+.toDoList form input {
+   border: none;
+   background-color: #802d56;
+   font-size: 1.2em;
+   color: rgb(248, 248, 248);
+   padding: 15px 10px;
+   width: 100%;
+   outline: 0;
+}
+
+.toDoList form button {
+   width: 10%;
+   border: none;
+   background-color: rgb(138, 14, 96);
+   font-size: 2em;
+   font-weight: bold;
+   color: white;
+}
+
+.container ul {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   gap: 0.5em;
+   color: #fff;
+   width: 60%;
+}
+
+.container ul li {
+   padding: 15px 10px;
+   border: 1.5px solid white;
+}
+
+li input {
+   width: fit-content;
+}
+
+.check {
+   width: 1.5em;
+   height: 1.5em;
+   cursor: pointer;
+   border: 1px solid rgb(255, 255, 255);
+   -webkit-appearance: none;
+}
+
+.check:checked {
+   background-color: rgb(40, 84, 207);
+   border: 1px solid #3c4979;
+}
+
+.task {
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 0 10px;
+   width: fit-content;
+   background: transparent;
+   border: none;
+   color: white;
+}
+
+.task:focus {
+   outline: none;
+}
+
+.container .fa-trash {
+   float: right;
+   cursor: pointer;
+   font-size: 1.3em;
+}
+
+.container ul li i:hover {
+   color: rgb(255, 82, 82);
+}
+
+.completed {
+   color: rgba(255, 255, 255, 0.633);
+   text-decoration: line-through;
+}
+
+@media screen and (max-width: 768px) {
+   body {
+      font-size: 12px;
+   }
+
+   .toDoList {
+      width: 98%;
+   }
+
+   .container ul {
+      width: 95%;
+   }
+
+   .toDoList form button {
+      width: 19%;
+   }
+}
